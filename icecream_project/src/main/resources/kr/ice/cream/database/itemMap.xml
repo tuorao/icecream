@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="item">
+	<insert id="insert" parameterType="kr.ice.cream.dto.ItemDTO">
+		INSERT INTO item
+		(title,price,content,meterial) VALUES
+		(#{title},#{price},#{content},#{meterial});
+	</insert>
+	<select id="pullAllItem" resultType="kr.ice.cream.dto.ItemDTO">
+		SELECT *
+		FROM item;
+	</select>
+	<select id="pullItem" parameterType="Integer" resultType="kr.ice.cream.dto.ItemDTO">
+		SELECT *
+		FROM item
+		WHERE srl=#{srl};
+	</select>
+	<select id="pullPrice" parameterType="Integer" resultType="Integer">
+		SELECT price
+		FROM item
+		WHERE srl=#{srl};
+	</select>
+</mapper>

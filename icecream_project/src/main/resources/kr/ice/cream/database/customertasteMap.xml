@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="customertaste">
+	<insert id="insert" parameterType="kr.ice.cream.dto.CustomertasteDTO">
+		INSERT INTO customertaste
+		(customersrls, sweet, soft, sour) VALUES
+		(#{customersrls},#{sweet},#{soft},#{sour});
+	</insert>
+	<update id="alter" parameterType="kr.ice.cream.dto.CustomertasteDTO">
+		UPDATE customertaste
+		SET sweet=#{sweet}, soft=#{soft}, sour=#{sour}
+		WHERE srl=#{srl};
+	</update>
+	<select id="pullTaste" parameterType="Integer" resultType="kr.ice.cream.dto.CustomertasteDTO">
+		SELECT *
+		FROM customertaste
+		WHERE srl=#{srl};
+	</select>
+	<delete id="delete" parameterType="Integer">
+		DELETE FROM customertaste
+		WHERE srl=#{srl};
+	</delete>
+</mapper>
