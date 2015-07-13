@@ -12,9 +12,9 @@
 		FROM customer
 		WHERE id=#{id} and password=#{password};
 	</select>
-	<update id="loinDate" parameterType="Map">
+	<update id="loginDate" parameterType="Map">
 		UPDATE customer
-		SET lastloindate=now()
+		SET lastlogindate=now()
 		WHERE id=#{id} and password=#{password};
 	</update>
 	<update id="alter" parameterType="kr.ice.cream.dto.CustomerDTO">

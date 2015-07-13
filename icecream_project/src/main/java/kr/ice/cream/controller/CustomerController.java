@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
+
 /**
  * Created by Administrator on 2015-07-13.
  */
@@ -55,5 +57,27 @@ public class CustomerController {
     }
 
 
+    /**
+     * 로그인 페이지 호출
+     * @return
+     */
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String CustomerLogin(){
+        return "customer/login";
+    }
+
+    /**
+     * 로그인 프로세스
+     * @param id
+     * @param password
+     * @param session
+     * @return
+     */
+    @RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
+    public String CustomerLoginProcess(@RequestParam String id, @RequestParam String password, HttpSession session){
+        CustomerDTO dto = loginService.login(id,password);
+        session.setAttribute("customer",dto);
+        return "customer/loginSuccess";
+    }
     
 }

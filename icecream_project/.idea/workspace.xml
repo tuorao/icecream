@@ -25,18 +25,40 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/controller/CustomerController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.36049107">
-                  <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1013#1014#0" expanded="true" />
-                    <element signature="e#1051#1052#0" expanded="true" />
-                    <element signature="e#1677#1678#0" expanded="true" />
-                    <element signature="e#1726#1727#0" expanded="true" />
+                    <element signature="e#1053#1054#0" expanded="true" />
+                    <element signature="e#1091#1092#0" expanded="true" />
+                    <element signature="e#1717#1718#0" expanded="true" />
+                    <element signature="e#1766#1767#0" expanded="true" />
+                    <element signature="e#1918#1919#0" expanded="true" />
+                    <element signature="e#1957#1958#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="loginProcess.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/loginProcess.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-12.892858">
+                  <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/login.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-12.214286">
+                  <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -54,8 +76,8 @@
           <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/main.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.5">
-                  <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+                <state vertical-scroll-proportion="-4.071429">
+                  <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -71,19 +93,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="customerMap.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/kr/ice/cream/database/customerMap.xml">
+          <file leaf-file-name="CustomerDAO.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/dao/CustomerDAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-                  <folding>
-                    <marker date="1436783491593" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
-                    <marker date="1436783491593" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
-                    <marker date="1436783491593" expanded="true" signature="587:669" placeholder="UPDATE custo..." />
-                    <marker date="1436783491593" expanded="true" signature="750:835" placeholder="UPDATE custo..." />
-                    <marker date="1436783491593" expanded="true" signature="941:982" placeholder="SELECT * FRO..customer..." />
-                    <marker date="1436783491593" expanded="true" signature="1045:1086" placeholder="DELETE FROM ..." />
-                  </folding>
+                <state vertical-scroll-proportion="0.42745537">
+                  <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -92,15 +107,32 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="CustomerDTO.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CustomerDTO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/dto/CustomerDTO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.63616073">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
                   <folding>
-                    <element signature="e#1153#1154#0" expanded="true" />
-                    <element signature="e#1184#1185#0" expanded="true" />
+                    <element signature="e#1220#1221#0" expanded="true" />
+                    <element signature="e#1247#1248#0" expanded="true" />
                     <element signature="method#toString#0;class#CustomerDTO#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="customerMap.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/kr/ice/cream/database/customerMap.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.3392857">
+                  <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+                  <folding>
+                    <marker date="1436800892292" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
+                    <marker date="1436800892292" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
+                    <marker date="1436800892292" expanded="true" signature="588:671" placeholder="UPDATE custo..." />
+                    <marker date="1436800892292" expanded="true" signature="752:837" placeholder="UPDATE custo..." />
+                    <marker date="1436800892292" expanded="true" signature="943:984" placeholder="SELECT * FRO..customer..." />
+                    <marker date="1436800892292" expanded="true" signature="1047:1088" placeholder="DELETE FROM ..." />
                   </folding>
                 </state>
               </provider>
@@ -136,7 +168,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/dao/OrdersDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/dao/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/service/CustomerLoginService.java" />
         <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/service/StoreManageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/service/CustomerJoinService.java" />
@@ -151,8 +182,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/join.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/dto/CustomerDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/kr/ice/cream/database/customerMap.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/loginProcess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/kr/ice/cream/database/customerMap.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/kr/ice/cream/dao/CustomerDAO.java" />
       </list>
     </option>
   </component>
@@ -215,9 +249,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -686,6 +719,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -984,11 +1018,12 @@
       <workItem from="1436752308943" duration="1957000" />
       <workItem from="1436763505546" duration="9830000" />
       <workItem from="1436783363305" duration="1086000" />
+      <workItem from="1436798900821" duration="2093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22061000" />
+    <option name="totallyTimeSpent" value="24154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1003,25 +1038,25 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18176973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1047,20 +1082,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/service/CustomerLoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="38" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/service/StoreManageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/service/StoreService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1087,12 +1108,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <marker date="1436783491593" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
-            <marker date="1436783491593" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
-            <marker date="1436783491593" expanded="true" signature="587:669" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="750:835" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="941:982" placeholder="SELECT * FRO..customer..." />
-            <marker date="1436783491593" expanded="true" signature="1045:1086" placeholder="DELETE FROM ..." />
+            <marker date="1436800892292" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
+            <marker date="1436800892292" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
+            <marker date="1436800892292" expanded="true" signature="588:671" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="752:837" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="943:984" placeholder="SELECT * FRO..customer..." />
+            <marker date="1436800892292" expanded="true" signature="1047:1088" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1151,12 +1172,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
-            <marker date="1436783491593" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
-            <marker date="1436783491593" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
-            <marker date="1436783491593" expanded="true" signature="587:669" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="750:835" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="941:982" placeholder="SELECT * FRO..customer..." />
-            <marker date="1436783491593" expanded="true" signature="1045:1086" placeholder="DELETE FROM ..." />
+            <marker date="1436800892292" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
+            <marker date="1436800892292" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
+            <marker date="1436800892292" expanded="true" signature="588:671" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="752:837" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="943:984" placeholder="SELECT * FRO..customer..." />
+            <marker date="1436800892292" expanded="true" signature="1047:1088" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1173,12 +1194,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
-            <marker date="1436783491593" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
-            <marker date="1436783491593" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
-            <marker date="1436783491593" expanded="true" signature="587:669" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="750:835" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="941:982" placeholder="SELECT * FRO..customer..." />
-            <marker date="1436783491593" expanded="true" signature="1045:1086" placeholder="DELETE FROM ..." />
+            <marker date="1436800892292" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
+            <marker date="1436800892292" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
+            <marker date="1436800892292" expanded="true" signature="588:671" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="752:837" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="943:984" placeholder="SELECT * FRO..customer..." />
+            <marker date="1436800892292" expanded="true" signature="1047:1088" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1195,12 +1216,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
-            <marker date="1436783491593" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
-            <marker date="1436783491593" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
-            <marker date="1436783491593" expanded="true" signature="587:669" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="750:835" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="941:982" placeholder="SELECT * FRO..customer..." />
-            <marker date="1436783491593" expanded="true" signature="1045:1086" placeholder="DELETE FROM ..." />
+            <marker date="1436800892292" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
+            <marker date="1436800892292" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
+            <marker date="1436800892292" expanded="true" signature="588:671" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="752:837" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="943:984" placeholder="SELECT * FRO..customer..." />
+            <marker date="1436800892292" expanded="true" signature="1047:1088" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1314,14 +1335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/dao/CustomerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3638393">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/dto/BasketDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51227677">
@@ -1387,24 +1400,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/kr/ice/cream/database/itemMap.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1436439579409" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1436439579409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..item..." />
-            <marker date="1436439579409" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..item..." />
-            <marker date="1436439579409" expanded="true" signature="-1:-1" placeholder="SELECT price..item..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1416,37 +1416,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/join.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.142858">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/dto/CustomerDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63616073">
+        <state vertical-scroll-proportion="0.0">
           <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
             <element signature="method#toString#0;class#CustomerDTO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/kr/ice/cream/database/customerMap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <marker date="1436783491593" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
-            <marker date="1436783491593" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
-            <marker date="1436783491593" expanded="true" signature="587:669" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="750:835" placeholder="UPDATE custo..." />
-            <marker date="1436783491593" expanded="true" signature="941:982" placeholder="SELECT * FRO..customer..." />
-            <marker date="1436783491593" expanded="true" signature="1045:1086" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1461,15 +1438,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36049107">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1918#1919#0" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.071429">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/loginProcess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.892858">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.214286">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/join.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.142858">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/kr/ice/cream/database/customerMap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3392857">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <marker date="1436800892292" expanded="true" signature="245:364" placeholder="INSERT INTO ..." />
+            <marker date="1436800892292" expanded="true" signature="462:528" placeholder="SELECT id, F..customer..." />
+            <marker date="1436800892292" expanded="true" signature="588:671" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="752:837" placeholder="UPDATE custo..." />
+            <marker date="1436800892292" expanded="true" signature="943:984" placeholder="SELECT * FRO..customer..." />
+            <marker date="1436800892292" expanded="true" signature="1047:1088" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ice/cream/dao/CustomerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42745537">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

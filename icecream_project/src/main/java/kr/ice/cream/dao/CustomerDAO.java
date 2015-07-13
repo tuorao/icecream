@@ -30,7 +30,7 @@ public class CustomerDAO extends SqlSessionDaoSupport{
 		map.put("password", password);
 		
 		if(getSqlSession().update("customer.loginDate",map)==1){
-			dto = (CustomerDTO) getSqlSession().selectOne("customer.loin", map);
+			dto = (CustomerDTO) getSqlSession().selectOne("customer.login", map);
 		} else dto = null;
 		
 		return dto;
