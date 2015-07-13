@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="basket">
+	<insert id="input" parameterType="kr.ice.cream.dto.BasketDTO">
+		INSERT  INTO basket
+		(customersrsl, itemsrl, amount, inputdate, status) VALUES
+		(#{customersrl}, #{itemsrl}, #{amount}, now(), #{status});
+	</insert>
+	<select id="pullList" parameterType="Integer" resultType="kr.ice.cream.dto.BasketDTO">
+		SELECT *
+		FROM  basket
+		WHERE status=1 and customersrl=#{customersrl};
+	</select>
+	<update id="alterStatus" parameterType="Integer">
+		UPDATE basket
+		SET status=0
+		WHERE srl=#{srl};
+	</update>
+</mapper>

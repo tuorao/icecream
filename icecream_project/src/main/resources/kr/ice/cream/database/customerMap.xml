@@ -8,7 +8,7 @@
 		(#{id},#{password},#{name},#{age},#{phone},now());
 	</insert>
 	<select id="login" parameterType="Map" resultType="kr.ice.cream.dto.CustomerDTO">
-		SELECT * 
+		SELECT *
 		FROM customer
 		WHERE id=#{id} and password=#{password};
 	</select>

@@ -2,17 +2,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="itemlist">
-	<insert id="input" parameterType="kr.ice.crea.dto.ItemlistDTO">
+	<insert id="input" parameterType="kr.ice.cream.dto.ItemlistDTO">
 		INSERT INTO itemlist
-		(itemsrl, amount, sort) VALUES
-		(#{itemsrl},#{amount},#{sort});
+		(itemsrl, amount, sort, busketsrl) VALUES
+		(#{itemsrl},#{amount},#{sort},#{busketsrl});
 	</insert>
 	<select id="pullItemSrl" parameterType="String" resultType="Integer">
 		SELECT itemsrl
 		FROM itemlist
 		WHERE sort=#{sort};
 	</select>
-	<select id="pullItemlist" parameterType="String" resultType="kr.ice.crea.dto.ItemlistDTO">
+	<select id="pullItemlist" parameterType="String" resultType="kr.ice.cream.dto.ItemlistDTO">
 		SELECT *
 		FROM itemlist
 		WHERE sort=#{sort};

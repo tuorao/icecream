@@ -12,35 +12,56 @@ public class ItemlistDTO {
 	private int itemsrl;	// 아이템 고유값
 	private int amount;		// 아이템 수량
 	private String sort;	// 주문정보 고유값
+	private int busketsrl; 	// 장바구니 srl
+
 	public int getSrl() {
 		return srl;
 	}
+
 	public void setSrl(int srl) {
 		this.srl = srl;
 	}
+
 	public int getItemsrl() {
 		return itemsrl;
 	}
+
 	public void setItemsrl(int itemsrl) {
 		this.itemsrl = itemsrl;
 	}
+
 	public int getAmount() {
 		return amount;
 	}
+
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
+
 	public String getSort() {
 		return sort;
 	}
+
 	public void setSort(String sort) {
 		this.sort = sort;
 	}
+
+	public int getBusketsrl() {
+		return busketsrl;
+	}
+
+	public void setBusketsrl(int busketsrl) {
+		this.busketsrl = busketsrl;
+	}
+
 	@Override
 	public String toString() {
-		return "ItemlistDTO [srl=" + srl + ", itemsrl=" + itemsrl + ", amount="
-				+ amount + ", sort=" + sort + "]";
+		return "ItemlistDTO{" +
+				"srl=" + srl +
+				", itemsrl=" + itemsrl +
+				", amount=" + amount +
+				", sort='" + sort + '\'' +
+				", busketsrl=" + busketsrl +
+				'}';
 	}
-	
-	
 }

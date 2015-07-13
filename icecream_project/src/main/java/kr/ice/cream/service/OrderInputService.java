@@ -1,5 +1,6 @@
 package kr.ice.cream.service;
 
+import kr.ice.cream.dao.BasketDAO;
 import kr.ice.cream.dao.ItemDAO;
 import kr.ice.cream.dao.ItemlistDAO;
 import kr.ice.cream.dao.OrdersDAO;
@@ -28,6 +29,8 @@ public class OrderInputService {
     @Autowired
     ItemDAO itemDao;
     @Autowired
+    BasketDAO basketDao;
+    @Autowired
     PlatformTransactionManager transactionManager;
 
     /**
@@ -51,6 +54,9 @@ public class OrderInputService {
                 item.setItemsrl(itemlist.get(i).getItemsrl());
                 item.setSort(dto.getSort());
                 itemlistDao.input(item);
+                if(itemlist.get(i).getBusketsrl()!=0){
+                    basketDao.alterStatus(itemlist.get(i).getBusketsrl());
+                }
             }
             orders.setPrice(setPrice(dto.getSort()));
             orders.setSrl(dto.getSrl());
@@ -63,6 +69,7 @@ public class OrderInputService {
 
         return res;
     }
+
 
     public int setPrice(String sort) {
         List<ItemlistDTO> list = itemlistDao.pullItemlist(sort);
