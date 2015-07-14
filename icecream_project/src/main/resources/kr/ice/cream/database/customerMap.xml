@@ -19,8 +19,8 @@
 	</update>
 	<update id="alter" parameterType="kr.ice.cream.dto.CustomerDTO">
 		UPDATE customer
-		SET id=#{id},password=#{password},phone=#{phone}
-		WHERE srl=#{srl};
+		SET password=#{password},phone=#{phone}
+		WHERE id=#{id};
 	</update>
 	<select id="idDupCheck" parameterType="String" resultType="kr.ice.cream.dto.CustomerDTO">
 		SELECT *

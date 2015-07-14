@@ -14,8 +14,10 @@
 <body>
 <%
   CustomerDTO dto = (CustomerDTO)session.getAttribute("customer");
+  String msg = (String)request.getAttribute("msg");
 %>
 아이디 : <%=dto.getId()%>
 비밀번호 : <%=dto.getPassword()%>
+<%=msg %>
 </body>
 </html>

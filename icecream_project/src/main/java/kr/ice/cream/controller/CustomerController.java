@@ -79,5 +79,47 @@ public class CustomerController {
         session.setAttribute("customer",dto);
         return "customer/loginSuccess";
     }
+
+    /**
+     * 회원정보 변경 페이지 호출
+     * @return
+     */
+    @RequestMapping(value = "/alter", method = RequestMethod.GET)
+    public String CusstomerDropout(){
+        return "customer/alter";
+    }
+
+    /**
+     * 회원 탈퇴 프로세스
+     * @param session
+     * @return
+     */
+    @RequestMapping(value = "/dropoutProcess", method = RequestMethod.POST)
+    public String CustomerDropoutProcess(HttpSession session){
+        CustomerDTO dto = (CustomerDTO) session.getAttribute("customer");
+        loginService.dropout(dto.getSrl());
+        session.invalidate();
+        return "customer/loginSuccess"; // 세션이 말소되었는지 확인하려고 일로 보냄
+    }
+
+    /**
+     * 회원정보 변경 프로세스
+     * @param dto
+     * @param session
+     * @param mav
+     * @return
+     */
+    @RequestMapping(value = "/alterProcess", method = RequestMethod.POST)
+    public String CustomerAlterProcess(@ModelAttribute CustomerDTO dto, HttpSession session, ModelAndView mav){
+    	System.out.println(dto.getId());
+        if(loginService.alter(dto)==1){
+            session.removeAttribute("customer");
+            session.setAttribute("customer", dto);
+            mav.addObject("msg","success");
+        } else {
+            mav.addObject("msg","fail");
+        }
+        return "customer/loginSuccess";
+    }
     
 }
