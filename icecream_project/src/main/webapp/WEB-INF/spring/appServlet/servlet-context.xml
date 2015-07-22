@@ -25,6 +25,10 @@
 	
 	<context:component-scan base-package="kr.ice.cream" />
 	
-	
+	<!-- 파일 업로드 빈 설정  !!!! id는 무조건 multipartResolver !!!!-->
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="defaultEncoding" value="UTF-8"></beans:property>
+		<beans:property name="maxUploadSize" value="-1"></beans:property> <!-- -1로 하면 크기 제한이 거의 없다고 보면된다 -->
+	</beans:bean>
 	
 </beans:beans>

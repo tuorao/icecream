@@ -1,17 +1,17 @@
 package kr.ice.cream.controller;
 
 import kr.ice.cream.dto.CustomerDTO;
+import kr.ice.cream.dto.ItemtasteDTO;
 import kr.ice.cream.service.CustomerJoinService;
 import kr.ice.cream.service.CustomerLoginService;
+import kr.ice.cream.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * Created by Administrator on 2015-07-13.
@@ -24,6 +24,8 @@ public class CustomerController {
     CustomerJoinService joinService;
     @Autowired
     CustomerLoginService loginService;
+    @Autowired
+    ItemService service;
 
     /**
      * 회원 가입 페이지 호출 (webapp/WEB-INF/views/customer/join.jsp)
@@ -37,13 +39,14 @@ public class CustomerController {
     /**
      * 회원 가입 프로세스 (webapp/WEB-INF/views/customer/main.jsp 호출)
      * @param dto
-     * @param mav
-     * @return 1 성공, 0 실패
+     * @return 1 성공, -1 실패
      */
     @RequestMapping(value = "/joinProcess", method = RequestMethod.POST)
-    public String CustomerJoinProcess(@ModelAttribute CustomerDTO dto, ModelAndView mav){
-        mav.addObject("joincheck", joinService.join(dto));
-        return "customer/main";
+    public ModelAndView CustomerJoinProcess(@ModelAttribute CustomerDTO dto ){
+        ModelAndView mav = new ModelAndView();
+        mav.addObject("joinResult",joinService.join(dto));
+        mav.setViewName("customer/login");
+        return mav;
     }
 
     /**
@@ -52,8 +55,9 @@ public class CustomerController {
      * @return 1 중복 없음(사용가능), 0 중복 (사용불가)
      */
     @RequestMapping(value = "/idDupCheck", method = RequestMethod.POST)
-    public int CustomerIdDupCheck(@RequestParam String id){
-        return joinService.inDupCheck(id);
+    public @ResponseBody int CustomerIdDupCheck(@RequestParam String id){
+    	int a = joinService.inDupCheck(id);
+        return a;
     }
 
 
@@ -74,10 +78,17 @@ public class CustomerController {
      * @return
      */
     @RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
-    public String CustomerLoginProcess(@RequestParam String id, @RequestParam String password, HttpSession session){
+    public ModelAndView CustomerLoginProcess(@RequestParam String id, @RequestParam String password, HttpSession session){
         CustomerDTO dto = loginService.login(id,password);
-        session.setAttribute("customer",dto);
-        return "customer/loginSuccess";
+        ModelAndView mav = new ModelAndView();
+        if(dto!=null){
+            session.setAttribute("customer",dto);
+            mav.setViewName("customer/home");
+        }else {
+            mav.addObject("loginStatus","fail");
+            mav.setViewName("customer/login");
+        }
+        return mav;
     }
 
     /**
@@ -111,7 +122,6 @@ public class CustomerController {
      */
     @RequestMapping(value = "/alterProcess", method = RequestMethod.POST)
     public String CustomerAlterProcess(@ModelAttribute CustomerDTO dto, HttpSession session, ModelAndView mav){
-    	System.out.println(dto.getId());
         if(loginService.alter(dto)==1){
             session.removeAttribute("customer");
             session.setAttribute("customer", dto);
@@ -121,5 +131,26 @@ public class CustomerController {
         }
         return "customer/loginSuccess";
     }
-    
+
+    @RequestMapping(value = "/itemlist", method = RequestMethod.GET)
+    public String CustomerItemlist(){
+        return "customer/itemlistsort";
+    }
+
+    /**
+     * 로그아웃
+     * @param session
+     * @return
+     */
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    public String CustomerLogout(HttpSession session){
+        session.invalidate();
+        return "redirect:/customer/home";
+    }
+
+    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    public String CustomerHome(){
+        return "customer/home";
+    }
+
 }

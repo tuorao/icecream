@@ -6,12 +6,14 @@
 */
 package kr.ice.cream.dao;
 
-import java.util.List;
-
 import kr.ice.cream.dto.ItemDTO;
-
+import kr.ice.cream.dto.ItemtasteDTO;
+import kr.ice.cream.dto.PageDTO;
+import org.apache.ibatis.session.RowBounds;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 public class ItemDAO extends SqlSessionDaoSupport{
@@ -52,6 +54,37 @@ public class ItemDAO extends SqlSessionDaoSupport{
 	public int pullPrice(int srl){
 		return (Integer) getSqlSession().selectOne("item.pullPrice", srl);
 	}
-	
-	
+
+	/**
+	 * 아이템 카테고리 1 불러오기
+	 * @return
+	 */
+	public List<ItemDTO> pullMinItem(){
+		return getSqlSession().selectList("item.pullMinItem");
+	}
+
+	public PageDTO page(int curpage) {
+		PageDTO list = new PageDTO();
+		int perpage = list.getPerpage();
+		int skip = (curpage-1)*perpage;
+		int totalcount = getCount();
+
+		List<ItemDTO> i = getSqlSession().selectList("item.pullMinItem", null, new RowBounds(skip, perpage));
+		list.setList(i);
+		list.setCurpage(curpage);
+		list.setTotalCount(totalcount);
+		return list;
+	}
+
+	public int getCount(){
+		return (Integer)getSqlSession().selectOne("item.minItemCount");
+	}
+
+	public int pullCount(){
+		return (Integer)getSqlSession().selectOne("item.itemCount");
+	}
+
+	public ItemDTO pullItemByTitle(String title){
+		return (ItemDTO) getSqlSession().selectOne("item.pullItemByTitle",title);
+	}
 }

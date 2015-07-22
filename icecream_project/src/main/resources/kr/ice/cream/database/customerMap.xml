@@ -4,8 +4,8 @@
 <mapper namespace="customer">
 	<insert id="join" parameterType="kr.ice.cream.dto.CustomerDTO">
 		INSERT INTO customer
-		(id,password,name,age,phone,joindate) VALUES
-		(#{id},#{password},#{name},#{age},#{phone},now());
+		(id,password,name,age,phone,sweet,sour,soft,joindate) VALUES
+		(#{id},#{password},#{name},#{age},#{phone},#{sweet},#{sour},#{soft},now());
 	</insert>
 	<select id="login" parameterType="Map" resultType="kr.ice.cream.dto.CustomerDTO">
 		SELECT *

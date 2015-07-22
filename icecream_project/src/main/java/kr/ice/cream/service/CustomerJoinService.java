@@ -20,7 +20,11 @@ public class CustomerJoinService {
      * @return 1 성공, 0 실패
      */
     public int join(CustomerDTO dto){
-        return customerDao.join(dto);
+        if(customerDao.join(dto)==1){
+            return 1;
+        } else
+            return -1;
+
     }
 
     /**

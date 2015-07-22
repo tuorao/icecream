@@ -7,7 +7,16 @@
 package kr.ice.cream.dao;
 
 
-public class ItemtasteDAO {
+import kr.ice.cream.dto.ItemtasteDTO;
+import org.mybatis.spring.support.SqlSessionDaoSupport;
+import org.springframework.stereotype.Repository;
 
-	// 이건 안해도 될거같다
+import java.util.List;
+
+@Repository
+public class ItemtasteDAO extends SqlSessionDaoSupport{
+
+    public List<ItemtasteDTO> pullItemTaste(){
+        return getSqlSession().selectList("itemtaste.pullItemTaste");
+    }
 }

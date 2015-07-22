@@ -1,9 +1,7 @@
 package kr.ice.cream.service;
 
 import kr.ice.cream.dao.CustomerDAO;
-import kr.ice.cream.dao.CustomertasteDAO;
 import kr.ice.cream.dto.CustomerDTO;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -19,8 +17,6 @@ public class CustomerLoginService {
 
     @Autowired
     CustomerDAO customerDao;
-    @Autowired
-    CustomertasteDAO customertasteDao;
     @Autowired
     PlatformTransactionManager transactionManager;
 
@@ -45,10 +41,8 @@ public class CustomerLoginService {
         TransactionStatus status = transactionManager.getTransaction(def);
 
         int res = 0;
-        try {
-            if(customertasteDao.delete(srl)==1){
+        try{
                 res = customerDao.dropout(srl);
-            }
         } catch (Exception e){
             e.printStackTrace();
             transactionManager.rollback(status);

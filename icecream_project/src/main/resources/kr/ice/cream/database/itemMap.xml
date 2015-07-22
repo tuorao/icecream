@@ -9,7 +9,8 @@
 	</insert>
 	<select id="pullAllItem" resultType="kr.ice.cream.dto.ItemDTO">
 		SELECT *
-		FROM item;
+		FROM item
+		ORDER BY srl DESC;
 	</select>
 	<select id="pullItem" parameterType="Integer" resultType="kr.ice.cream.dto.ItemDTO">
 		SELECT *
@@ -20,5 +21,25 @@
 		SELECT price
 		FROM item
 		WHERE srl=#{srl};
+	</select>
+	<select id="pullMinItem" resultType="kr.ice.cream.dto.ItemDTO">
+		SELECT *
+		FROM item
+		WHERE price=2800
+		ORDER BY srl DESC ;
+	</select>
+	<select id="minItemCount" resultType="Integer">
+		SELECT count(*)
+		FROM item
+		WHERE price=2800;
+	</select>
+	<select id="itemCount" resultType="Integer">
+		SELECT COUNT(*)
+		FROM item;
+	</select>
+	<select id="pullItemByTitle" parameterType="String" resultType="kr.ice.cream.dto.ItemDTO">
+		SELECT *
+		FROM item
+		WHERE price=2800 and title=#{title};
 	</select>
 </mapper>
